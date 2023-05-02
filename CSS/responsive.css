@@ -1,0 +1,404 @@
+
+@media(max-width: 1312px){
+    .hero-grid-1 .hero-heading{
+        font-size: 6rem;
+    }
+    .hero-grid-1 .hero-para{
+        font-size: 1.9rem;
+        line-height: 2.3rem;
+    }
+}
+@media(max-width: 1240px){
+    header{
+        padding: 2rem 5rem;
+    }
+    /* Hero Section */
+    .hero-grid-1{
+        width: 90%;
+    }
+    .hero-grid-2{
+        width: 100%;
+        height: 70%;
+    }
+    /* Services Section */
+    .section-services .cards{
+        margin: 4rem 1rem 0 1rem;
+    }
+    .section-services .cards .card{
+        padding: 0 1rem;
+    }
+    .section-trending{
+        padding: 9rem 4rem;
+    }
+    .main-cards{
+        gap: 7rem 4rem ;
+        margin-left: 1rem;
+    }
+}
+@media(max-width: 1078px){
+    .trending-top{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        align-items: flex-start;
+        margin-left: 5rem;
+    }
+    .review{
+        width: 55%;
+        padding: 3rem 2rem;
+    }
+    .review::after{
+        top: 32%;
+        left: 46%;
+    }
+    .review p{
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+    }
+}
+@media(max-width: 1030px){
+    .main-cards .main-card{
+        margin: 5rem 3rem 0 3rem;
+    }
+    .main-cards .main-card .main-card-title{
+        margin-top: 3rem;
+    }
+    .main-cards .main-card .main-card-title .price{
+        font-size: 3rem;
+    }
+    .main-cards .main-card .main-card-title .main-title{
+        font-size: 2.3rem;
+    }
+    .main-cards .main-card .main-card-title .main-para{
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+    .main-cards .main-card .main-card-title .feature-icons span{
+        font-size: 1.4rem;
+    }
+    .main-cards .main-card .main-card-title .secondary-btn{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+    
+}
+@media(max-width: 950px){
+    .section-services{
+        padding: 9rem 3rem;
+    }
+    .main-cards .main-card .main-card-title{
+        margin-top: 1rem;
+    }
+    .review{
+        width: 70%;
+        padding: 3rem 2rem;
+    }
+    .review::after{
+        top: 31%;
+        left: 46%;
+    }
+}
+@media(max-width: 820px){
+    header nav{
+        position: absolute;
+        padding: 0 3rem ;
+        top: 7rem;
+        left: 0;
+        width: 30rem;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: all .3s linear;
+        background-color: var(--main-color);
+        z-index: 9999999;
+    }
+    header nav.active{
+        transform: translateX(0);
+        position: fixed;
+    }
+    header nav .nav-list{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 4rem 0;
+    }
+    header nav .nav-list .nav-item{
+        margin: 1.2rem 1.5rem;
+    }
+    header nav .nav-list .nav-item .nav-link{
+        color: var(--white);
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+    #close-menu{
+        display: inline-block;
+        color: var(--white);
+    }
+    .main-cards .main-card{
+        margin: 5rem 3rem 0 3rem;
+        display: flex;
+        flex-direction: column;
+        border: .001rem solid #e6e6e6;
+    }
+    .main-cards .main-card img{
+        width: 45%;
+        margin: 0 auto;
+    }
+    .main-cards .main-card .main-card-title{
+        margin: 1rem 1rem 1rem 3rem;
+    }
+    .main-cards .main-card .main-card-title .card-heart{
+        top: 57%;
+    }
+    .main-cards .main-card .main-card-title .main-title{
+        font-size: 2.3rem;
+    }
+    .main-cards .main-card .main-card-title .feature-icons{
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media(max-width: 760px){
+    /* Hero Section */
+    .section-hero{
+        padding: 9rem 4rem 1rem 4rem;
+    }
+    .hero-grid-1 .hero-heading{
+        font-size: 5rem;
+    }
+    .hero-grid-1 .hero-para{
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+        margin-top: 2rem;
+    }
+    .hero-bottom label{
+        font-size: 1.8rem;
+    }
+    .hero-bottom address{
+        font-size: 1.3rem;
+    }
+    .review{
+        width: 90%;
+        padding: 3rem 2rem;
+    }
+    .review::after{
+        top: 31%;
+        left: 46%;
+    }
+    /* Talk Section */
+    .section-talk{
+        padding: 9rem 5rem;
+    }
+    .section-services .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-services .cards .card{
+        max-width: 60vw;
+    }
+}
+@media(max-width: 690px){
+    .main-cards .main-card img{
+        width: 55%;
+    }
+    .section-testimonials{
+        padding: 9rem 4rem;
+    }
+    .section-talk .talk-grid-1 .talk-heading{
+        font-size: 5rem;
+    }
+    .section-talk .talk-grid-1 .talk-para{
+        font-size: 1.8rem;
+    }
+    .section-footer{
+        padding: 9rem 3rem;
+    }
+}
+@media(max-width: 610px){
+    .hero-bottom{
+        margin: 4rem 1rem;
+    }
+    .section-clients{
+        padding: 2rem 2rem 9rem 2rem;
+    }
+    .hero-grid-2 img{
+        width: 85%;
+    }
+    .review{
+        width: 100%;
+        padding: 3rem 2rem;
+    }
+    .review::after{
+        top: 31%;
+        left: 46%;
+    }
+    .section-talk .talk-grid-1 .talk-heading{
+        font-size: 4rem;
+    }
+}
+@media(max-width: 570px){
+    .section-trending .trending-top{
+        margin-left: 0;
+    }
+    .section-talk{
+        padding: 9rem 2rem;
+    }
+    .section-talk .talk-grid-1 .talk-para{
+        margin-right: 10rem;
+    }
+}
+@media(max-width: 510px){
+    .section-hero{
+        padding: 9rem 2rem;
+    }
+    .hero-grid-2 img{
+        width: 80%;
+    }
+    .section-services{
+        padding: 9rem 2rem;
+    }
+    .section-services .cards .card{
+        max-width: 80vw;
+    }
+    .section-trending{
+        padding: 9rem 1rem;
+    }
+    .main-cards .main-card{
+        margin: 5rem 6rem 0 0;
+    }
+    .main-cards .main-card img{
+        width: 55%;
+        margin: 0 auto;
+    }
+    .main-cards .main-card .main-card-title{
+        margin: 1rem;
+    }
+    .main-cards .main-card .main-card-title .price{
+        font-size: 2.6rem;
+    }
+    .main-cards .main-card .main-card-title .main-title{
+        font-size: 2rem;
+    }
+    .main-cards .main-card .main-card-title .feature-icons{
+        margin-bottom: 0;   
+    }
+    .main-cards .main-card .main-card-title .card-heart{
+        top: 49%;
+    }
+    .section-talk .talk-grid-2 input{
+        width: 60%;
+    }
+    footer .main-footer p{
+        font-size: 1.7rem;
+    }
+}
+@media(max-width: 445px){
+    header{
+        padding: 2rem 3rem;
+    }
+    .section-hero{
+        padding: 5rem 1rem;
+    }
+    .hero-grid-1{
+        margin-right: 5rem;
+    }
+    .hero-grid-1 .hero-heading{
+        font-size: 4rem;
+        margin-right: 15rem;
+    }
+    .hero-grid-1 .hero-para{
+        font-size: 1.6rem;
+        margin-right: 15rem;
+    }
+    .hero-grid-2 img{
+        width: 70%;
+        height: 100%;
+    }
+    .section-services .heading{
+        font-size: 3.5rem;
+    }
+    .section-trending .main-cards .main-card{
+        max-width: 35rem;
+    }
+    .main-cards .main-card img{
+        width: 75%;
+    }
+    .review{
+        width: 100%;
+        padding: 3rem 2rem;
+    }
+    .review::after{
+        top: 28%;
+        left: 42%;
+    }
+    .review p{
+        font-size: 1.8rem;
+    }
+    .section-talk .talk-grid-1 .talk-heading{
+        font-size: 3.5rem;
+    }
+    .section-talk .talk-grid-1 .talk-para{
+        margin-right: 15rem;
+    }
+    .grid-2 .talk-grid-2 button{
+        width: 6rem;
+    }
+    footer .main-footer p{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 390px){
+    .trending-top .trend-head .trending-heading{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .trending-top .trend-head p{
+        font-size: 1.7rem;
+    }
+    .section-trending .main-cards .main-card{
+        max-width: 30rem;
+    }
+    .main-cards .main-card img{
+        width: 85%;
+    }
+    .main-cards .main-card .main-card-title .card-heart{
+        top: 55%;
+    }
+    .section-testimonials{
+        padding: 9rem 2rem;
+    }
+    .section-talk .talk-grid-1 .talk-heading{
+        font-size: 3rem;
+    }
+    .section-talk .talk-grid-1 .talk-para{
+        margin-right: 20rem;
+    }
+    .section-talk .talk-grid-2 input{
+        width: 50%;
+    }
+}
+@media(max-width: 370px){
+    .hero-grid-2 img{
+        width: 62%;
+    }
+    .trending-top select{
+        margin-right: .1rem;
+    }
+    .review{
+        padding: 3rem 1rem;
+    }
+    .review::after{
+        top: 29%;
+    }
+    .section-talk .talk-grid-2 label{
+        font-size: 2rem;
+    }
+    .section-footer{
+        padding: 9rem 2rem;
+    }
+}
+

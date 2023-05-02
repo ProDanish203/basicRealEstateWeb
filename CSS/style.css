@@ -1,0 +1,654 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+/* font-family: 'Inter', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500&display=swap');
+/* font-family: 'Edu NSW ACT Foundation', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    caret-color: var(--main-color);
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --main-color: #0f2b4a;
+    --main-color-light: #27405c;
+    --main-color-extra-light: #576b80;
+    --black: #111;
+    --white: #fff;
+}
+::selection{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+/*===================== 
+    Common Classes
+================== */
+
+.section{
+    padding: 10rem;
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    gap: 4rem;
+}
+.heading{
+    color: var(--main-color);
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.btn{
+    padding: 1rem 2rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    border-radius: .4rem;
+    outline: none;
+    border: .1rem solid var(--main-color-light);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.secondary-btn{
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    color: var(--main-color);
+    border-radius: .4rem;
+    outline: none;
+    border: .1rem solid var(--main-color);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+@media(hover:hover){
+    .btn:hover{
+        background-color: var(--main-color-light);
+        border: .1rem solid var(--main-color);
+    }
+    .secondary-btn:hover{
+        background-color: var(--main-color);
+        color: var(--white);
+    }
+}
+
+/*===================== 
+    Header Section Starts
+================== */
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2.5rem 15rem;
+}
+.logo a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--black);
+    letter-spacing: 2px;
+}
+header nav .nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav .nav-list .nav-item{
+    margin: 0 2rem;
+    font-size: 2rem;
+}
+header nav .nav-list .nav-item .nav-link{
+    padding-bottom: .1rem;
+    color: var(--main-color);
+    position: relative;
+}
+header nav .nav-list .nav-item .nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: .2rem;
+    background-color: var(--main-color);
+    transition: all .3s linear;
+}
+header nav .nav-list .nav-item .nav-link:hover::after{
+    width: 100%;
+}
+
+header nav .nav-list .nav-item .login-link,
+header nav .nav-list .nav-item .signup-link{
+    border: .1rem solid var(--main-color);
+    border-radius: .4rem;
+    padding: .8rem 1.5rem;
+}
+header nav .nav-list .nav-item .login-link:hover::after,
+header nav .nav-list .nav-item .signup-link:hover::after {
+    width: 0;
+}
+header nav .nav-list .nav-item .login-link:hover,
+header nav .nav-list .nav-item .signup-link:hover{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+@media(hover:none){
+    header nav .nav-list .nav-item .login-link,
+        header nav .nav-list .nav-item .signup-link{
+        border: .1rem solid var(--white);
+        border-radius: .4rem;
+        padding: .8rem 1.5rem;
+        background-color: var(--main-color-light);
+        color: var(--white);
+        }
+    }
+#menu{
+    display: none;
+}
+#close-menu{
+    font-size: 3.5rem;
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    display: none;
+    cursor: pointer;
+}
+/*===================== 
+    Header Section Ends
+================== */
+
+/*===================== 
+    Hero Section Starts
+================== */
+.section-hero{
+    padding-bottom: 1rem;
+}
+.hero-grid-1{
+    height: 75%;
+}
+.hero-grid-1 .hero-heading{
+    color: var(--main-color);
+    font-size: 8rem;
+    font-weight: 600;
+}
+.hero-grid-1 .hero-para{
+    color: var(--main-color-light);
+    font-size: 2.1rem;
+    margin: 4rem 0;
+}
+.hero-bottom{
+    display: flex;
+    gap: 8rem;
+    flex-wrap: wrap;
+    margin: 5rem 2rem 2rem 2rem;
+}
+.hero-bottom label{
+    color: var(--main-color);
+    font-size: 1.9rem;
+    
+}
+.hero-bottom address{
+    font-size: 1.5rem;
+    color: var(--main-color-extra-light);
+    margin-top: .5rem;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.hero-grid-2{
+    height: 75%;
+}
+.hero-grid-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .4rem;
+}
+/*===================== 
+    Hero Section Ends
+================== */
+
+/*===================== 
+    Clients Section Starts
+================== */
+
+    .section-clients{
+        padding-top: 2rem;
+    }
+    .section-clients .clients{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9rem;
+        flex-wrap: wrap;
+    }
+
+/*===================== 
+    Clients Section Ends
+================== */
+
+/*===================== 
+    Services Section Starts
+================== */
+
+.section-services .cards{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 5rem;
+    margin: 4rem 2rem 0 2rem;
+    place-items: center;
+}
+.section-services .cards .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2.5rem;
+}
+.section-services .cards .card .card-icon{
+    font-size: 6rem;
+    margin: 1rem 0 4rem 0;
+    color: var(--main-color);
+}
+.section-services .cards .card .title{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+    font-weight: 500;
+}
+.section-services .cards .card .card-desc{
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--main-color-extra-light);
+}
+/*===================== 
+    Services Section Ends
+================== */
+
+/*===================== 
+    Trending Section Starts
+================== */
+
+.trending-top .trend-head .trending-heading{
+    color: var(--main-color);
+    font-size: 5rem;
+    font-weight: 900;
+}
+.trending-top .trend-head p{
+    color: var(--main-color-light);
+    font-size: 1.9rem;
+    margin-top: 1.5rem;
+}
+.trending-top select{
+    padding: 1rem 1.5rem;
+    background-color: #f6f6f6;
+    border-radius: .4rem;
+    border: .1rem solid #ccc;
+    font-size: 1.5rem;
+    margin-right: .8rem;
+    cursor: pointer;
+}
+.trending-top select option{
+    color: var(--main-color);
+}
+.trending-top{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50rem,1fr));
+    place-items: center;
+}
+.main-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(45rem,2fr));
+    gap: 7rem 9rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+.main-cards .main-card{
+    display: flex;
+    gap: 3rem;
+    position: relative;
+    border: .1rem solid #ccc;
+    border-radius: .5rem;
+    padding: 1rem 1rem;
+}
+.main-cards .main-card img{
+    width: 35%;
+}
+.main-cards .main-card .main-card-title .card-heart{
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border: .1rem solid var(--main-color);
+    color: var(--main-color);
+    border-radius: .4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+}
+@media(hover:hover){
+    .main-cards .main-card .main-card-title .card-heart{
+        border: .1rem solid #ccc;
+        color: var(--main-color-extra-light);
+    }
+    .main-cards .main-card .main-card-title .card-heart:hover{
+        border: .1rem solid var(--main-color);
+        color: var(--main-color);
+        cursor: pointer;
+    }
+}
+.main-cards .main-card .main-card-title .price{
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+    color: var(--main-color);
+    font-weight: 700;
+}
+.main-cards .main-card .main-card-title .main-title{
+    font-size: 2rem;
+    color: var(--main-color-light);
+    margin: 2rem 0 1rem 0;
+}
+.main-cards .main-card .main-card-title .main-para{
+    color: var(--main-color-extra-light);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.main-cards .main-card .main-card-title .feature-icons span{
+    color: var(--main-color);
+}
+.main-cards .main-card .main-card-title .feature-icons span:nth-child(2){
+    margin-left: 5rem;
+}
+.main-cards .main-card .main-card-title .secondary-btn{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+/*===================== 
+    Trending Section Ends
+================== */
+
+/*===================== 
+    Testimonials Section Starts
+================== */
+
+.section-testimonials .test-para{
+    font-size: 2rem;
+    color: var(--main-color-light);
+    text-align: center;
+    margin: 2rem 0;
+}
+.section-testimonials .slider{
+    margin: 8rem 0;
+}
+/* Swiper Js Style */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+}
+.review{
+    width: 50%;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    border: .1rem solid #ccc;
+    box-shadow: 8px -5px 14px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 8px -5px 14px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 8px -5px 14px 0px rgba(0,0,0,0.1);
+}
+.review::after{
+    content: "";
+    position: absolute;
+    top: 32.5%;
+    left: 48%;
+    width: 0;
+    height: 0;
+    border-top: 3rem solid transparent;
+    border-left: 3rem solid transparent;
+    border-bottom: 3rem solid #ccc;
+    border-right: 3rem solid transparent;
+}
+.review p{
+    color: var(--main-color-light);
+}
+.review .review-name{
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.review .stars i{
+    color: rgb(245, 194, 100);
+    font-size: 1.5rem;
+}
+/*===================== 
+    Testimonials Section Ends
+================== */
+
+/*===================== 
+    Talk Section Starts
+================== */
+.section-talk{
+    background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.5)),url(../IMG/talk-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.grid-2 .talk-grid-1 .talk-heading{
+    color: var(--white);
+    font-size: 5.5rem;
+    margin-bottom: 2rem;
+}
+.grid-2 .talk-grid-1 .talk-para{
+    color: var(--white);
+    font-size: 1.9rem;
+}
+.grid-2 .talk-grid-2 label{
+    color: var(--white);
+    font-size: 2.2rem;
+}
+.grid-2 .talk-grid-2 input{
+    padding: 1.5rem 1rem;
+    width: 80%;
+    margin-top: 2.2rem;
+    color: var(--main-color-extra-light);
+    font-size: 1.3rem;
+}
+.grid-2 .talk-grid-2 button{
+    width: 8rem;
+    height: 5rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    border: none;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    cursor: pointer;
+}
+.grid-2 .talk-grid-2 button i{
+    font-size: 2rem;
+}
+/*===================== 
+    Talk Section Ends
+================== */
+
+/*===================== 
+    Footer Section Starts
+================== */
+
+footer .grid-4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
+    gap: 5rem;
+}
+footer .footer-headings{
+    font-size: 2.3rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+footer .footer-list .footer-list-item{
+    margin: 2rem 0;
+}
+footer .footer-list .footer-list-item .footer-links{
+    color: var(--main-color-light);
+    font-size: 1.8rem;
+    margin: 2rem .5rem;
+    padding-bottom: .7rem;
+    position: relative;
+}
+footer .footer-list .footer-list-item .footer-links::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: .4rem;
+    background-color: var(--main-color);
+    transition: all .3s linear;
+}
+footer .footer-list .footer-list-item .footer-links:hover::after{
+    width: 100%;
+}
+
+footer .main-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+footer .main-footer p{
+    font-size: 2rem;
+    color: var(--main-color-extra-light);
+}
+/*===================== 
+    Footer Section Ends
+================== */
+
+/* Loader Section */
+.loader-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.loader-container img{
+    width: 70rem;
+    height: 40rem;
+}
+.loader-container.fade-out{
+    top: 110%;
+    opacity: 0;
+    transition: all .5s linear;
+}
+
+
+/*===================== 
+    Contact Section Ends
+================== */
+
+.contact form{
+    
+    position: relative;
+    max-width: 70rem;
+    margin: 0 auto;
+    border: .1rem solid #ccc;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: var(--main-color);
+    border-radius: .5rem;
+}
+.contact form .input-container{
+    display: flex;
+    gap: 4rem;
+    position: relative;
+    margin: 1rem 1rem;
+}
+.contact form .text-input{
+    position: relative;
+    padding: 1rem 1rem;
+    border-radius: .4rem;
+    border: .1rem solid var(--main-color-extra-light);
+    width: 100%;
+}
+#fname{
+    width: 50%;
+}
+#lname{
+    width: 50%;
+}
+.contact form .text-input-2{
+    position: relative;
+    padding: .8rem;
+    border-radius: .4rem;
+    border: .1rem solid var(--main-color-extra-light);
+}
+.btn-submit{
+    background-color: #ef233c;
+    width: 30%;
+    margin-left: 1rem;
+}
+/*===================== 
+    Contact Section Ends
+================== */
+
+
+
+
+
+
+
+
+
